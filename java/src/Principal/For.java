@@ -1,15 +1,15 @@
 package Principal;
 
-public class While {
+import java.util.Iterator;
+
+public class For {
 
 	public static void main(String[] args) {
-		 
-		int contador = 1;
 		
-		while(contador <= 10 ) {
+		for(int contador = 1; contador <= 10; contador++) {
 			System.out.printf("i = %d\n", contador);
-			contador++;
 		}
-	} 
+		
+	}
 
 }
