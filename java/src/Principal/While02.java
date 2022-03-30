@@ -11,7 +11,7 @@ public class While02 {
 			String valor = "";
 			
 			while(!valor.equalsIgnoreCase("sair")) {
-				System.out.print("Digite algo: ");
+				System.out.print("Digite algo: "); 
 				valor = entrada.nextLine();
 			}
 		 
