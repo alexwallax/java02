@@ -23,7 +23,37 @@ public class ValorVsReferencia {
 		System.out.println(d1.obterData());
 		System.out.println(d2.obterData());
 		
+		voltarDataParaValorPadrao(d1);
 		
+		System.out.println(d1.obterData());
+		System.out.println(d2.obterData());
+		
+		int c = 5;
+		alterarPrimitivo(c);
+		System.out.println(c);
 		
 	}
+	
+	static void voltarDataParaValorPadrao(Data d) {
+		d.dia = 1;
+		d.mes = 1;
+		d.ano = 1970;
+	}
+	
+	static void alterarPrimitivo(int a) {
+		a++;
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
