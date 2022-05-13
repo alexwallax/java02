@@ -7,19 +7,20 @@ public class Data {
 	public int ano;
 	
 	Data() { 
-		dia = 1;
-		mes = 1;
-		ano = 1970;
+		//dia = 1;
+		//mes = 1;
+		//ano = 1970;
+		this(1, 1, 1970); // usando o this como método, só pode usar o des asim em um construtor
 	} 
 	
-	public Data(int diaInicial, int mesInicial, int anoInicial) {
-		dia = diaInicial;
-		mes = mesInicial;
-		ano = anoInicial;
+	public Data(int dia, int mes, int ano) {
+		this.dia = dia;
+		this.mes = mes;
+		this.ano = ano;
 	}
 	
-	public String obterData() {
-		return String.format("%d/%d/%d\n\n", dia, mes, ano);
+	public String obterData() { 
+		return String.format("%d/%d/%d\n\n", this.dia, mes, ano);
 	}
 	
 	
